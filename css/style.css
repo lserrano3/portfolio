@@ -1,0 +1,330 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* "Mobile first" CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+body {
+	
+	background:#1A1E23;
+    
+}
+
+
+#container {
+	height:100%;
+    font-size: 15px;
+    color:white;
+}
+header {
+    padding:20px;
+    text-align:left;
+    line-height:35px;
+    font-family: 'Corben', 'Georgia', 'Times', sans-serif;
+    background-color: rgba(255,233,0,100);
+    color:#1A1E23;
+}
+
+main{
+    padding:20px;
+}
+
+
+.profile{
+ 
+    width:50%;
+    border-radius:50%;
+   
+}
+
+.soulheader{
+    padding:20px;
+    text-align:left;
+    line-height:35px;
+    font-family: 'Corben', 'Georgia', 'Times', sans-serif;
+    color:#1A1E23;
+    background-color: rgba(255,233,0,100);
+
+   
+}
+
+.img1 {background-image:url('file:///Volumes/LULUS%20CCC/adv-website-template-2/img/BrochureFrontBack.jpg');
+height: 50%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+}
+.img2 {background-image:url('file:///Volumes/LULUS%20CCC/adv-website-template-2/img/BrochureInside.jpg');
+height: 50%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.img3 {background-image:url('file:///Volumes/LULUS%20CCC/adv-website-template-2/img/Banner.jpg');
+height: 50%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+nav{
+    display:inline-block;
+    width:100%;
+    text-align: center;
+    overflow:auto;
+    border-bottom: 3px solid lightgrey;
+    background:white;
+}
+
+nav a {
+  
+    text-decoration: none;
+    background: white;
+    color:black;
+    padding: 6px;
+    font-size:18px; 
+    font-family: 'DM Mono', monospace;
+    font-weight:bold;
+}
+nav a:hover {
+    background-color: black;
+    color:white;
+    padding:.25px;
+}
+nav li{
+    display:inline;
+    list-style:none;
+}
+
+#veerheader{
+    background-color:#1A1E23;
+    color:white;
+   
+}
+.design{
+    width:15%;
+    height:auto;
+}
+.textblock{
+    position:absolute;
+    bottom:400px;
+    left:20px;
+    background-color:rgba(0,0,0,.7);
+    color:white;
+    padding-left:20px;
+    padding-right:20px;
+}
+.veermockup{
+    width:100%;
+    height:auto;
+    padding: 0px;
+    
+}
+
+.soulmain{
+    background-color:#1A1E23;
+}
+.soulbody{
+    background-color:white;
+}
+.ig1{
+    width:70%;
+    height:auto;
+}
+.ig2{
+    width:55%;
+    height:auto;
+}
+.desktoppic{ 
+    width:50%;
+border-bottom:25%;
+}
+.myrole{
+    background-color:rgba(134, 116, 245, .8);   
+  
+}
+.myrole2{
+    padding:50px;
+    color:white;
+   
+}
+
+a {
+    text-decoration:none;
+    color:rgba(134, 116, 245, .8);
+}
+.intro{
+    font-size: 18px;
+    text-justify: auto;
+}
+.problem{
+    background-color:rgba(134, 116, 245, .8);
+    text-align:justify;
+    padding:15px;
+   margin:20px;
+    
+}
+.solution{
+    background-color:rgba(134, 116, 245, .8);
+    text-align:justify;
+    padding:15px;
+   margin:20px;
+}
+.roles1{
+  text-align:justify;
+    padding:15px;
+}
+.roles2{
+  text-align:justify;
+    padding:15px;
+}
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+======================================== */
+
+/* New CSS for tablet sizes.
+You can change the pixel number below */
+@media all and (min-width: 768px) {
+    .problem{
+        width:45%;
+        margin:auto;
+        float:left;
+    }
+    .solution{
+        width:45%;
+        margin:auto;
+        float:right;
+    }
+	.roles1{
+    text-align:justify;
+    width:35%;
+    float:right;
+    margin:auto;
+}
+    .roles2{
+    text-align:justify;
+    width:35%;
+    float:left;
+    margin:auto;
+}
+    .parentroles{
+    display:flex;
+       
+    }
+	
+} /* closes 768px+ */
+
+
+
+
+/* New CSS for desktop sizes.
+You can change the pixel number below */
+@media all and (min-width: 1024px) {
+    .img1{
+      background-attachment: fixed;
+    padding-bottom: 100px;  
+    }
+    .img2{
+      background-attachment: fixed;
+    padding-bottom: 100px;  
+    }
+    .img3{
+      background-attachment: fixed;
+    padding-bottom: 200px;  
+    }
+.profile{
+ 
+    width:25%;
+    
+}	
+header {
+ 
+text-align:center;
+
+}
+.veermockup{
+    padding:0px;
+    margin:0;
+    background-size:cover;
+    
+}
+.myrole{
+    background-color:#8674f5;
+    width:auto;
+  
+}
+.desktoppic{ 
+    width:25%;
+}
+
+.content{
+    width:100%;
+    height:auto;
+    padding: 0px;
+    }
+.ig1{
+    width:55%;
+    height:auto;
+}
+.ig2{
+    width:40%;
+    height:auto;
+}
+    .design{
+    width:7%;
+    height:auto;
+}
+  
+   .problem{
+        width:45%;
+        margin:10px;
+        
+    }
+    .solution{
+        width:45%;
+        margin:10px;
+       
+    }
+	.roles1{
+   
+    margin:10px;
+}
+    .roles2{
+  
+    margin:10px;
+}
+    
+} /* closes 1024px+ */
+
+
+
+
+
